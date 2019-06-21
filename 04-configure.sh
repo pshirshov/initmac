@@ -1,5 +1,8 @@
 #!/bin/bash -xe
 
+# Useful: https://gist.github.com/brandonb927/3195465/
+# full disk access required to run this script
+
 SCREENSHOT_TARGET=~/Desktop/Screenshots
 mkdir -p $SCREENSHOT_TARGET
 defaults write com.apple.screencapture location $SCREENSHOT_TARGET
@@ -22,6 +25,28 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Limit Ad Tracking
 defaults write com.apple.AdLib forceLimitAdTracking -bool true
+
+# Displaying ASCII control characters using caret notation in standard text views
+defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
+
+# Save to disk, rather than iCloud, by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+# Disable smart quotes/smart dashes/autocorrection
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Enabling full keyboard access for all controls (enable Tab in modal dialogs, menu windows, etc.
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# mouse tracking speed
+defaults write -g com.apple.mouse.scaling 2.5
+
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
 
 ## Finder
 
@@ -63,6 +88,17 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Disable iCloud as default save location
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
+# show all files by default
+#defaults write com.apple.finder AppleShowAllFiles TRUE
+
+# always show tabbar
+defaults write com.apple.finder ShowTabView -bool true
+# always show path bar
+defaults write com.apple.finder ShowPathBar -bool true
+
+# Allowing text selection in Quick Look/Preview in Finder by default
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
 killall Finder
 ## End Finder
 
@@ -79,6 +115,12 @@ defaults write com.apple.dock minimize-to-application -bool true
 
 # Show Percent Battery in menu bar
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+defaults write com.apple.dock autohide -bool true
+
+# disable animation
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
 
 killall Dock
 ## End Dock
@@ -99,8 +141,17 @@ killall Calendar>/dev/null || true
 ## End Calendar
 
 ## Safari
-# Set up Safari for development
-defaults write com.apple.Safari.SandboxBroker ShowDevelopMenu -bool true
+# Enabling Safari's debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+# Enabling the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
+
+# Adding a context menu item for showing the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
 killall Safari > /dev/null || true
 ## End Safari
 
