@@ -21,6 +21,7 @@ brew install \
     p7zip \
     ripgrep \
     tmux \
+    tig \
     typescript \
     npm \
     yarn \
