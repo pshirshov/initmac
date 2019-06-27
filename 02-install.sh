@@ -29,6 +29,7 @@ brew install \
     duti
 
 brew cask install \
+    alfred \
     bitwarden \
     docker \
     dotnet-sdk \
