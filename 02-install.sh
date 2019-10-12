@@ -34,7 +34,6 @@ brew cask install \
     docker \
     dotnet-sdk \
     firefox \
-    firefox-developer-edition \
     gimp \
     iina \
     iterm2 \
@@ -43,23 +42,29 @@ brew cask install \
     keepassxc \
     libreoffice \
     mactex-no-gui \
-    nextcloud \
-    skim \
+    protonvpn \
+    qbittorrent \
     skype \
     slack \
-    sloth \
-    spectacle \
     synthesia \
     teamviewer \
     telegram \
     telegram-desktop \
+    tiles \
     the-unarchiver \
-    transmission \
     visual-studio-code \
-    vivaldi \
-    vlc \
-    xnviewmp \
-    yacreader
+    vlc
+
+
+#     firefox-developer-edition \
+#     sloth \
+#     xnviewmp \
+#     yacreader
+#     vivaldi \
+#     spectacle \
+#    nextcloud \
+#    skim \
+#    transmission \
 
 brew cask install \
     adoptopenjdk/openjdk/adoptopenjdk8 \
@@ -69,6 +74,7 @@ brew cask install \
     yourkit-java-profiler
 
 brew install \
+    ammonite-repl \
     coursier \
     jabba \
     jenv \
