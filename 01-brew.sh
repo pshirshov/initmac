@@ -8,4 +8,4 @@ brew tap coursier/formulas
 brew tap caskroom/versions
 brew tap adoptopenjdk/openjdk
 brew tap homebrew/cask-drivers
-
+brew tap homebrew/cask-fonts

@@ -16,6 +16,7 @@ brew install \
     jq \
     midnight-commander \
     mono \
+    ncdu \
     nuget \
     nmap \
     p7zip \
@@ -30,10 +31,12 @@ brew install \
 
 brew cask install \
     alfred \
+    android-platform-tools \
     bitwarden \
     docker \
     dotnet-sdk \
     firefox \
+    font-fira-code \
     gimp \
     iina \
     iterm2 \
@@ -42,6 +45,8 @@ brew cask install \
     keepassxc \
     libreoffice \
     mactex-no-gui \
+    openineditor-lite \
+    openinterminal-lite \
     protonvpn \
     qbittorrent \
     skype \
@@ -55,16 +60,16 @@ brew cask install \
     visual-studio-code \
     vlc
 
-
-#     firefox-developer-edition \
-#     sloth \
-#     xnviewmp \
-#     yacreader
-#     vivaldi \
-#     spectacle \
-#    nextcloud \
-#    skim \
-#    transmission \
+echo INGORED: brew cask install \
+    firefox-developer-edition \
+    sloth \
+    xnviewmp \
+    yacreader \
+    vivaldi \
+    spectacle \
+    nextcloud \
+    skim \
+    transmission
 
 brew cask install \
     adoptopenjdk/openjdk/adoptopenjdk8 \

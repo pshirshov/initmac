@@ -22,5 +22,7 @@ mas install 1274495053
 mas install 1475897096
 # Bitwarden
 mas install 1352778147
+# CotEditor
+mas install 1024640650
 
 echo "SUCCESS"
