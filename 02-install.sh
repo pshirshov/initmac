@@ -50,6 +50,7 @@ brew cask install \
     protonvpn \
     qbittorrent \
     skype \
+    skim \
     slack \
     synthesia \
     teamviewer \
@@ -68,7 +69,6 @@ echo INGORED: brew cask install \
     vivaldi \
     spectacle \
     nextcloud \
-    skim \
     transmission
 
 brew cask install \
