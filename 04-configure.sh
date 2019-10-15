@@ -3,8 +3,10 @@
 # Useful: https://gist.github.com/brandonb927/3195465/
 # full disk access required to run this script
 
-SCREENSHOT_TARGET=~/Desktop/Screenshots
+
+SCREENSHOT_TARGET=~/Pictures/Screenshots
 mkdir -p $SCREENSHOT_TARGET
+ln -s $SCREENSHOT_TARGET ~/Desktop/Screenshots
 defaults write com.apple.screencapture location $SCREENSHOT_TARGET
 
 # Graphite/Gray accent/Highlight
