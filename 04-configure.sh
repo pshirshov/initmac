@@ -4,6 +4,11 @@
 # full disk access required to run this script
 
 
+cpname=pshirshov
+sudo scutil --set ComputerName "$cpname"
+sudo scutil --set HostName "$cpname"
+sudo scutil --set LocalHostName "$cpname"
+
 SCREENSHOT_TARGET=~/Pictures/Screenshots
 mkdir -p $SCREENSHOT_TARGET
 if [[ ! -e ~/Desktop/Screenshots ]] ; then
