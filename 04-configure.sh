@@ -47,8 +47,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Enabling full keyboard access for all controls (enable Tab in modal dialogs, menu windows, etc.
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-defaults write -g InitialKeyRepeat -int 20
-defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -int 25
+defaults write -g KeyRepeat -int 2
 
 # mouse tracking speed
 defaults write -g com.apple.mouse.scaling 2.5
@@ -190,4 +190,4 @@ defaults write com.apple.TextEdit IgnoreHTML -bool true
 sudo defaults write /Library/Preferences/com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Text displayed on the login window
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'xxx'
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This Mac is a property of Septimal Mind Ltd. Please email team@7mind.io in case you found it.'

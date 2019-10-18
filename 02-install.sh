@@ -30,7 +30,7 @@ brew install \
     duti
 
 brew cask install \
-    alfred \
+    appcleaner \
     android-platform-tools \
     bitwarden \
     docker \
@@ -47,7 +47,6 @@ brew cask install \
     mactex-no-gui \
     openineditor-lite \
     openinterminal-lite \
-    protonvpn \
     qbittorrent \
     skype \
     skim \
@@ -60,6 +59,12 @@ brew cask install \
     the-unarchiver \
     visual-studio-code \
     vlc
+
+brew cask install \
+    alfred \
+    bartender \
+    carbon-copy-cloner \
+    protonvpn
 
 echo INGORED: brew cask install \
     firefox-developer-edition \
