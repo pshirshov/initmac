@@ -24,5 +24,10 @@ mas install 1475897096
 mas install 1352778147
 # CotEditor
 mas install 1024640650
-
+# Apple Pages
+mas install 409201541
+# Apple Numbers
+mas install 409183694
+# Apple Keynote
+mas install 409203825
 echo "SUCCESS"

@@ -6,7 +6,10 @@
 
 SCREENSHOT_TARGET=~/Pictures/Screenshots
 mkdir -p $SCREENSHOT_TARGET
+if [[ ! -e ~/Desktop/Screenshots ]] ; then
 ln -s $SCREENSHOT_TARGET ~/Desktop/Screenshots
+fi
+
 defaults write com.apple.screencapture location $SCREENSHOT_TARGET
 
 # Graphite/Gray accent/Highlight
@@ -43,6 +46,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Enabling full keyboard access for all controls (enable Tab in modal dialogs, menu windows, etc.
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+defaults write -g InitialKeyRepeat -int 20
+defaults write -g KeyRepeat -int 1
 
 # mouse tracking speed
 defaults write -g com.apple.mouse.scaling 2.5
@@ -124,6 +130,12 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0
 
+# Defines the animation which is used to show windows being minimized into the Dock.
+defaults write com.apple.dock mineffect -string 'scale'
+
+# While hovering over top of an icon in the Dock, use the scroll wheel on the mouse, or use the scroll gesture on the track pad to expose all the windows in the app
+defaults write com.apple.dock scroll-to-open -bool true
+
 killall Dock
 ## End Dock
 
@@ -171,3 +183,11 @@ defaults write com.apple.TextEdit ShowRuler -bool false
 
 # Display HTML files as HTML code instead of formatted text in TextEdit
 defaults write com.apple.TextEdit IgnoreHTML -bool true
+
+###
+
+# Prevent Time Machine from Prompting to Use New Hard Drives as Backup Volume
+sudo defaults write /Library/Preferences/com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+# Text displayed on the login window
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'xxx'
