@@ -42,7 +42,7 @@ brew install \
     starship \
     tokei \
     tealdeer \
-    topgrade \
+    topgrade
 
 # More rust tools:
 # fselect runiq
