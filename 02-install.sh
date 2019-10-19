@@ -51,6 +51,7 @@ brew cask install \
     appcleaner \
     android-platform-tools \
     bitwarden \
+    kode54-cog \
     docker \
     dotnet-sdk \
     firefox \
@@ -76,7 +77,8 @@ brew cask install \
     tiles \
     the-unarchiver \
     visual-studio-code \
-    vlc
+    vlc \
+    xit
 
 brew cask install \
     alfred \
