@@ -29,6 +29,24 @@ brew install \
     mas \
     duti
 
+# nice rust tools
+brew install \
+    bat \
+    broot \
+    dust \
+    exa \
+    fd \
+    hyperfine \
+    mdcat \
+    sd \
+    starship \
+    tokei \
+    tealdeer \
+    topgrade \
+
+# More rust tools:
+# fselect runiq
+
 brew cask install \
     appcleaner \
     android-platform-tools \
