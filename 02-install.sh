@@ -51,7 +51,7 @@ brew cask install \
     appcleaner \
     android-platform-tools \
     bitwarden \
-    kode54-cog \
+    cheatsheet \
     docker \
     dotnet-sdk \
     firefox \
@@ -62,6 +62,7 @@ brew cask install \
     itsycal \
     jetbrains-toolbox \
     keepassxc \
+    kode54-cog \
     libreoffice \
     mactex-no-gui \
     openineditor-lite \
