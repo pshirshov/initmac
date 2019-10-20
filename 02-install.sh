@@ -105,6 +105,7 @@ brew cask install \
     yourkit-java-profiler
 
 brew install \
+    cocoapods \
     ammonite-repl \
     coursier \
     jabba \
