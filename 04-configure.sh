@@ -192,7 +192,7 @@ defaults write com.apple.TextEdit IgnoreHTML -bool true
 ###
 
 # Prevent Time Machine from Prompting to Use New Hard Drives as Backup Volume
-sudo defaults write /Library/Preferences/com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Text displayed on the login window
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string 'This Mac is a property of Septimal Mind Ltd. Please email team@7mind.io in case you found it.'
