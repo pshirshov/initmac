@@ -30,4 +30,6 @@ mas install 409201541
 mas install 409183694
 # Apple Keynote
 mas install 409203825
+# audio switcher
+mas install 1484150558
 echo "SUCCESS"
