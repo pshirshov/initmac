@@ -62,7 +62,6 @@ brew cask install \
     itsycal \
     jetbrains-toolbox \
     keepassxc \
-    kode54-cog \
     libreoffice \
     mactex-no-gui \
     openineditor-lite \
@@ -78,8 +77,7 @@ brew cask install \
     tiles \
     the-unarchiver \
     visual-studio-code \
-    vlc \
-    xit
+    vlc
 
 brew cask install \
     alfred \
@@ -90,12 +88,14 @@ brew cask install \
 echo INGORED: brew cask install \
     firefox-developer-edition \
     sloth \
+    kode54-cog \
     xnviewmp \
     yacreader \
     vivaldi \
     spectacle \
     nextcloud \
-    transmission
+    transmission \
+    xit
 
 brew cask install \
     adoptopenjdk/openjdk/adoptopenjdk8 \
