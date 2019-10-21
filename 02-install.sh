@@ -118,5 +118,6 @@ brew install \
     sbt \
     scala
 
-gem install --user-install bundler jekyll
-sudo gem install cocoapods
+brew install ruby
+gem install bundler jekyll
+gem install cocoapods
