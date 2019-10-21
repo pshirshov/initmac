@@ -14,6 +14,7 @@ brew install \
     imagemagick \
     ipcalc \
     jq \
+    mackup \
     midnight-commander \
     mono \
     ncdu \
