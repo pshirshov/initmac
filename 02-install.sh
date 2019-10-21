@@ -105,8 +105,11 @@ brew cask install \
     visualvm \
     yourkit-java-profiler
 
+echo brew install \
+    cocoapods
+
 brew install \
-    cocoapods \
+    carthage \
     ammonite-repl \
     coursier \
     jabba \
@@ -115,3 +118,5 @@ brew install \
     sbt \
     scala
 
+gem install --user-install bundler jekyll
+sudo gem install cocoapods
