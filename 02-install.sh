@@ -8,6 +8,7 @@ brew install \
     coreutils \
     git \
     gnupg \
+    gnu-sed \
     go \
     graphviz \
     htop \
@@ -21,7 +22,7 @@ brew install \
     nuget \
     nmap \
     p7zip \
-    ripgrep \
+    rename \
     tmux \
     tig \
     typescript \
@@ -39,11 +40,13 @@ brew install \
     fd \
     hyperfine \
     mdcat \
+    ripgrep \
     sd \
     starship \
     tokei \
     tealdeer \
-    topgrade
+    topgrade \
+    websocat
 
 # More rust tools:
 # fselect runiq
