@@ -3,6 +3,7 @@
 brew install \
     autojump \
     awscli \
+    aha \
     cloc \
     cmake \
     coreutils \
@@ -11,6 +12,7 @@ brew install \
     gnu-sed \
     go \
     graphviz \
+    highlight \
     htop \
     imagemagick \
     ipcalc \
@@ -22,6 +24,7 @@ brew install \
     nuget \
     nmap \
     p7zip \
+    pygments \
     rename \
     tmux \
     tig \
