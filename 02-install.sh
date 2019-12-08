@@ -77,12 +77,12 @@ brew cask install \
     skype \
     skim \
     slack \
-    synthesia \
     teamviewer \
     telegram \
     telegram-desktop \
     tiles \
     the-unarchiver \
+    tunnelblick \
     visual-studio-code \
     vlc
 
@@ -99,6 +99,7 @@ echo INGORED: brew cask install \
     xnviewmp \
     yacreader \
     vivaldi \
+    synthesia \
     spectacle \
     nextcloud \
     transmission \
@@ -125,5 +126,6 @@ brew install \
     scala
 
 brew install ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 gem install bundler jekyll
 gem install cocoapods
