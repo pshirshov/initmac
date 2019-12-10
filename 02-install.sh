@@ -32,7 +32,8 @@ brew install \
     npm \
     yarn \
     mas \
-    duti
+    duti \
+    wait_on
 
 # nice rust tools
 brew install \
