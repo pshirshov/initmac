@@ -113,11 +113,7 @@ brew cask install \
     visualvm \
     yourkit-java-profiler
 
-echo brew install \
-    cocoapods
-
 brew install \
-    carthage \
     ammonite-repl \
     coursier \
     jabba \
@@ -125,6 +121,12 @@ brew install \
     maven \
     sbt \
     scala
+
+brew install github/gh/gh
+
+echo brew install \
+    cocoapods \
+    carthage
 
 brew install ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
